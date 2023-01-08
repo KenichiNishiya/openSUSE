@@ -1,9 +1,9 @@
 #!/bin/bash
 
 HOME=/home/yori/
-REPO=/home/yori/re/git/Fedora/
+REPO=/home/yori/re/git/openSUSE/
 IN=/home/yori/.config/
-OUT=/home/yori/re/git/Fedora/config/
+OUT=/home/yori/re/git/openSUSE/config/
 
 cp $IN'alacritty/alacritty.yml' $OUT'alacritty/alacritty.yml'
 cp $IN'bspwm/bspwmrc' $OUT'bspwm/bspwmrc'
@@ -13,7 +13,7 @@ cp $IN'polybar/config.ini' $OUT'polybar/config.ini'
 cp $IN'polybar/launch.sh' $OUT'polybar/launch.sh'
 cp $IN'rofi/config.rasi' $OUT'rofi/config.rasi'
 cp $IN'sxhkd/sxhkdrc' $OUT'sxhkd/sxhkdrc'
-cp $HOME'Documents/fedora.sh' $REPO 
+cp $HOME'Documents/suse.sh' $REPO 
 cp $HOME'.vimrc' $REPO'vimrc'
 cp $HOME'.zsh_aliases' $REPO'zsh_aliases'
 cp $HOME'.profile' $REPO'profile'

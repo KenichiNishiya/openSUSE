@@ -24,8 +24,7 @@ lua require'colorizer'.setup()
 colorscheme dracula
 
 " Set highlight lines
-"":set cursorline cursorcolumn
-:set cursorcolumn
+:set cursorline cursorcolumn
 nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 hi CursorLine   cterm=NONE ctermbg=black  ctermfg=NONE "guibg=lightgrey guifg=white
 hi CursorColumn cterm=NONE ctermbg=black  ctermfg=NONE "guibg=lightgrey guifg=white
