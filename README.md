@@ -1,2 +1,2 @@
-# Fedora
-Configuration files for Fedora
+# openSUSE
+Configuration files for openSUSE
