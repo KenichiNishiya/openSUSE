@@ -11,7 +11,7 @@ cp ~/.config/rofi/config.rasi ~/.config/bakap/rofi/config.rasi-$day
 cp ~/.config/sxhkd/sxhkdrc ~/.config/bakap/sxhkd/sxhkdrc-$day
 cp ~/.config/nvim/init.vim ~/.config/bakap/nvim/init.vim-$day
 cp ~/.zsh_aliases ~/.config/bakap/zsh_aliases/zsh_aliases-$day
-cp ~/.profile ~/.config/bakap/profile/profile-$day
+cp ~/.zprofile ~/.config/bakap/zprofile/zprofile-$day
 cp ~/.zshrc ~/.config/bakap/zshrc/zshrc-$day
 cp ~/Documents/suse.sh ~/.config/bakap/suse/suse.sh-$day
 cp ~/.config/wofi/config ~/.config/bakap/wofi/config-$day

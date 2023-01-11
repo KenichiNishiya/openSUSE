@@ -20,7 +20,7 @@ cp $IN'wofi/config' $OUT'wofi/config'
 cp ~/Documents/suse.sh $REPO 
 cp ~/.vimrc $REPO'vimrc'
 cp ~/.zsh_aliases $REPO'zsh_aliases'
-cp ~/.profile $REPO'profile'
+cp ~/.zprofile $REPO'zprofile'
 cp ~/.zshrc $REPO'zshrc'
 
 cp -r ~/'.config/bakap/' $REPO
