@@ -9,20 +9,24 @@ CT=1
 #rm /home/yori/Music/on/*
 #fi
 
-echo "Updating database..."
+echo -e "\033[1;33mUpdating database..."
 
 while [ $CT -le 4 ]
 do
     if [ $CT == 1 ];then
+        echo -e "\033[1;33mUpdating directory　アニメ"
     ORIGIN="/home/yori/Music/音楽/アニメ/"
 
     elif [ $CT == 2 ];then
+        echo -e "Updating directory　インストルメンタル"
     ORIGIN="/home/yori/Music/音楽/インストルメンタル/"
 
     elif [ $CT == 3 ];then
+        echo -e "Updating directory　他"
     ORIGIN="/home/yori/Music/音楽/他/"
 
     elif [ $CT == 4 ];then
+        echo -e "Updating directory　東方"
     ORIGIN="/home/yori/Music/音楽/東方/"
     fi
 
@@ -48,17 +52,17 @@ done
 
 TOTAL=$(ls $TARGET | wc -l)
 
-echo "Database updated"
+echo -e "\033[0;32mDatabase updated"
 echo "Total files: $TOTAL"
 
 if [ $NEW -gt 1 ];then
-echo "$NEW new files added"
+    echo "$NEW new files added\033[0m"
 
 elif [ $NEW == 1 ];then
-echo "1 new file added"
+    echo "1 new file added\033[0m"
 
 elif [ $NEW == 0 ];then
-echo "No new file was added"
+    echo -e "\033[0;31mNo new file was added\033[0m"
 fi
 
 mpc update

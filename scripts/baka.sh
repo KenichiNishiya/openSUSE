@@ -14,6 +14,10 @@ cp ~/.zsh_aliases ~/.config/bakap/zsh_aliases/zsh_aliases-$day
 cp ~/.profile ~/.config/bakap/profile/profile-$day
 cp ~/.zshrc ~/.config/bakap/zshrc/zshrc-$day
 cp ~/Documents/suse.sh ~/.config/bakap/suse/suse.sh-$day
+cp ~/.config/wofi/config ~/.config/bakap/wofi/config-$day
+cp ~/.config/waybar/config.jsonc ~/.config/bakap/waybar/config.jsonc-$day
+cp ~/.config/waybar/style.css ~/.config/bakap/waybar/style.css-$day
+cp ~/.config/hypr/hyprland.conf ~/.config/bakap/hypr/hyprland.conf-$day
 sudo cp /etc/sddm.conf.d/sddm.conf ~/.config/bakap/sddm/sddm.conf-$day
 sudo cp -r /usr/share/sddm/themes/sddm-sugar-candy ~/.config/bakap/sddm/
 #cp ~/.config/compton.conf ~/.config/bakap/compton-$day
