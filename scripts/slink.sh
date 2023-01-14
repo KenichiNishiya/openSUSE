@@ -4,7 +4,7 @@ ORIGIN=""
 TARGET="/home/yori/Music/on/"
 NEW=0
 CT=1
-
+alias ls=ls
 #if [ $(ls /home/yori/Music/on | wc -l) != 0 ]; then
 #rm /home/yori/Music/on/*
 #fi
