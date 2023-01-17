@@ -15,6 +15,7 @@ cp ~/.zprofile ~/.config/bakap/zprofile/zprofile-$day
 cp ~/.zshrc ~/.config/bakap/zshrc/zshrc-$day
 cp ~/Documents/suse.sh ~/.config/bakap/suse/suse.sh-$day
 cp ~/.config/wofi/config ~/.config/bakap/wofi/config-$day
+cp ~/.config/wofi/style.css ~/.config/bakap/wofi/style.css-$day
 cp ~/.config/waybar/config.jsonc ~/.config/bakap/waybar/config.jsonc-$day
 cp ~/.config/waybar/style.css ~/.config/bakap/waybar/style.css-$day
 cp ~/.config/hypr/hyprland.conf ~/.config/bakap/hypr/hyprland.conf-$day

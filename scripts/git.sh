@@ -16,6 +16,7 @@ cp $IN'waybar/config.jsonc' $OUT'waybar/config.jsonc'
 cp $IN'waybar/style.css' $OUT'waybar/sytle.css'
 cp $IN'hypr/hyprland.conf' $OUT'hypr/hyprland.conf'
 cp $IN'wofi/config' $OUT'wofi/config'
+cp $IN'wofi/style.css' $OUT'wofi/style.css'
 
 cp ~/Documents/suse.sh $REPO 
 cp ~/.vimrc $REPO'vimrc'
