@@ -96,7 +96,7 @@ vnoremap DF <esc>
 
 " esc in command mode
 cnoremap df <C-C>
-cnoremap DF <C-C>
+cnoremap df <C-C>
 
 " Change timeout for esc
 "set timeoutlen=100 " Leave this disabled so gcc can properly work

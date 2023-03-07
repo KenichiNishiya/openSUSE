@@ -35,6 +35,7 @@ $HOME/.config/polybar/launch.sh
 
 # Start programs
 #picom --experimental-backend -b &
+redshift -P -O 3000
 nm-applet &
 fcitx5 &
 megasync & #xdotool search --name 'MEGAsync' windowclose

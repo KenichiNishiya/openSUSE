@@ -32,6 +32,7 @@ sudo systemctl disable snapper-cleanup.service
 
 #- STOP AUTO CREATING SNAPSHOTS WHEN RUNNING ZYPPER
 sudo zypper rm snapper-zypp-plugin
+sudo zypper al snapper-zypp-plugin
 
 #- DISABLE QUOTAS
 # Having quotas enabled let you verify the disk usage for the snapshots, however it can impact performance, mostly if you have too many snapshots (like, more than 50 I guess)
@@ -100,7 +101,9 @@ yarn install
 yarn build
 pip3 install jedi
 
-:CocInstall coc-python
+:CocInstall coc-python coc-html coc-css coc-tsserver coc-clangd 
+# Open a C/C++ file and use this command
+:CocCommand clangd.install
 
 '￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣'
 #! ENABLE TRIM FOR SSD (BETTER PERFORMANCE AND SSD LIFETIME)
@@ -517,7 +520,7 @@ sudo zypper in gamemoded libgamemode0 libgamemode0-32bit libgamemodeauto0 libgam
 # On steam
 'gamemoderun %command%'
 'gamemoderun mangohud %command%'
-
+'INTEL_DEBUG=norbc gamemoderun gamescope -w 1366 -h 768 -f mangohud %command%'
 # On lutris 
 #'Configure > System options > Advanced > Command prefix'
 'gamemoderun'
@@ -546,6 +549,15 @@ INTEL_DEBUG=norbc
 
 # Use exemple on steam if the mouse keeps escaping
 INTEL_DEBUG=norbc gamescope -f %command%
+
+'￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣'
+# CUSTOM PROTON GE EGG ROLL
+# https://www.makeuseof.com/install-proton-ge-on-steamos-linux/
+
+mkdir ~/.steam/root/compatibilitytools.d
+# https://github.com/GloriousEggroll/proton-ge-custom
+tar -xf GE-Proton*.tar.gz -C ~/.steam/root/compatibilitytools.d/
+# Exit steam and reopen it
 
 '￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣'
 #! WINE OPEN ON DEFAULT BROWSER
@@ -1268,6 +1280,7 @@ ninja -C build install
 
 # Probably related to xdg-desktop-portal*, which makes us wait 25+ seconds for naught
 sudo zypper rm xdg-desktop-portal-gtk
+sudo zypper al xdg-desktop-portal-gtk
 # May be xdg-desktop-portal-gnome or something else
 
 '￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣'

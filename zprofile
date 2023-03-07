@@ -11,9 +11,13 @@ export MANGOHUD=0
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
-export PATH=/home/yori/.local/bin:/usr/local/sbin:/usr/lib:/usr/share:/home/yori/.cargo/bin:/sbin:/usr/libexec:$PATH
+export PATH=$GOPATH/bin:/home/yori/.local/bin:/usr/local/sbin:/usr/lib:/usr/share:/home/yori/.cargo/bin:/sbin:/usr/libexec:$PATH
 export XDG_CURRENT_DESKTOP=Unity
 #export PATH=/home/yori/.cargo/bin:$PATH
+
+if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
+    export MOZ_ENABLE_WAYLAND=1
+fi
 
 #export PULSE_LATENCY_MSEC=80
 #export XDG_DATA_DIRS=/home/yori/.local/share/flatpak/exports/share
